@@ -1,7 +1,7 @@
 ---
 id: no2
-name: OMI/Aura Total and Tropospheric NO₂ 
-description: Daily global dataset of total and tropospheric nitrogen dioxide (NO₂) columns at 0.25° x 0.25° spatial resolution
+name: OMI/Aura Monthly Total and Tropospheric NO₂ 
+description: Monthly global dataset of total and tropospheric nitrogen dioxide (NO₂) columns at 0.25° x 0.25° spatial resolution
 media:
   src: ::file ./media/OMI_global.png
   alt: Science and Data
@@ -168,7 +168,8 @@ layers:
     >
       <p>
         <strong>Source:</strong> Ozone Monitoring Instrument (OMI) on NASA’s Aura satellite<br />
-        <strong>Temporal Resolution:</strong> Daily measurements from October 2004 to present<br />
+        <strong>Temporal Extent:</strong> October 2020 to October 2022<br />
+        <strong>Temporal Resolution:</strong> Monthly measurements from October 2004 to present<br />
         <strong>Spatial Extent:</strong> Global<br />
         <strong>Spatial Resolution:</strong> 0.25 x 0.25 degree <br />
         <strong>Data Units:</strong> Molecules per cm² (mol/cm²)<br />
@@ -203,39 +204,43 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
    <p> 
     ## Applications and Use Cases
-      - Assessing health impacts of NO₂ exposure in collaboration with public health organizations.
-      - Tracking urban air pollution trends using HAQAST tools like the Urban Air Quality Explorer.
-      - Supporting regulatory frameworks like EPA’s AirNow system with satellite-derived insights.
+      - Assessing health impacts of NO₂ exposure in collaboration with public health organizations
+      - Tracking urban air pollution trends using HAQAST tools like the Urban Air Quality Explorer
+      - Supporting regulatory frameworks like EPA’s AirNow system with satellite-derived insights
   </p>
   </Prose>
 </Block>
 
-<Block style={{justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
-   <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
-     <p>
-        ## Frequently Asked Questions (FAQs)
-            **1. What is NO₂?**  
-              NO₂ is a harmful air pollutant primarily emitted from vehicles, power plants, and industrial activities. It contributes to respiratory issues and environmental degradation.<br />
-
-            **2. How does nitrogen dioxide interact with other air pollutants?**  
-              Nitrogen dioxide (NO₂) reacts with volatile organic compounds and sunlight to form harmful secondary pollutants like ground-level ozone and fine particulate matter, which contribute to smog and respiratory problems. It also combines with water vapor to create acid rain and nitrate particles, worsening air quality and environmental damage.<br />
-
-            **3. How can I use this dataset?**  
-              Applications include air quality monitoring, urban planning, climate modeling, and public health assessments.<br />
-
-            **4. What tools are available for data analysis?**  
-              Tools such as Jupyter Notebooks (TBD), the [VEDA visualization platform](#), and [Earthdata Search](https://search.earthdata.nasa.gov/) can be used to analyze this dataset.<br />
-     </p>
+<Block style={{ justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
+  <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <p style={{ marginBottom: '1.5em' }}>
+      <strong>What is NO₂?</strong><br />
+      NO₂ is a harmful air pollutant primarily emitted from vehicles, power plants, and industrial activities. It contributes to respiratory issues and environmental degradation
+    </p>
+    <p style={{ marginBottom: '1.5em' }}>
+      <strong>How does nitrogen dioxide interact with other air pollutants?</strong><br />
+      Nitrogen dioxide (NO₂) reacts with volatile organic compounds and sunlight to form harmful secondary pollutants like ground-level ozone and fine particulate matter, which contribute to smog and respiratory problems. It also combines with water vapor to create acid rain and nitrate particles, worsening air quality and environmental damage
+    </p>
+    <p style={{ marginBottom: '1.5em' }}>
+      <strong>How can I use this dataset?</strong><br />
+      Applications include air quality monitoring, urban planning, climate modeling, and public health assessments
+    </p>
+    <p style={{ marginBottom: '1.5em' }}>
+      <strong>What tools are available for data analysis?</strong><br />
+      Tools such as Jupyter Notebooks (TBD), the <a href="#">VEDA visualization platform</a>, and <a href="https://search.earthdata.nasa.gov/">Earthdata Search</a> can be used to analyze this dataset
+    </p>
   </Prose>
 </Block>
+
 
 <Block style={{justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
      <p> 
     ## Scientific Resources
       - [User guide for dataset navigation](https://disc.gsfc.nasa.gov/datasets?page=1&source=AURA%20OMI)
-      - Algorithm theoretical basis documents [ATBD](https://eospso.nasa.gov/atbd-category/49) detailing data processing methods. 
-      - Key publication: [Ozone Monitoring Instrument (OMI) Aura nitrogen dioxide standard product version 4.0 with improved surface and cloud treatments.](https://amt.copernicus.org/articles/14/455/2021/)
+      - Algorithm theoretical basis documents [ATBD](https://eospso.nasa.gov/atbd-category/49) detailing data processing methods
+      - Key publication: [Ozone Monitoring Instrument (OMI) Aura nitrogen dioxide standard product version 4.0 with improved surface and cloud treatments](https://amt.copernicus.org/articles/14/455/2021/)
       - User Jupyter Notebook: TBD
     </p>
   </Prose>
@@ -245,7 +250,7 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
       <p>  
     ## Disclaimer 
-      This dataset is provided "as is" and users are encouraged to verify its suitability for their intended purposes. This dataset has been transformed from the original format (NetCDF) into Cloud Optimized GeoTIFF (COG) for display in the US GHG Center. Careful quality checks are used to ensure data transformation has been performed correctly.
+      The users are encouraged to verify its suitability for their intended purposes. This dataset has been transformed from the original format (NetCDF) into Cloud Optimized GeoTIFF (COG) for display in the Air Quality (AQ) Dashboard. Careful quality checks are used to ensure data transformation has been performed correctly.
     </p>
   </Prose>
 </Block>
@@ -254,7 +259,7 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
     <p>  
     ## License
-    This data is published for research academic and related non-commercial purposes. Creative Commons Zero v1.0 Universal (CC0 1.0).
+    This data is published for research academic and related non-commercial purposes. [Creative Commons Zero v1.0 Universal (CC0 1.0).](https://creativecommons.org/publicdomain/zero/1.0/deed.en)
     </p>
   </Prose>
 </Block>
@@ -263,7 +268,7 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
    <p>
     ## Acknowledgements
-       NASA Earth Science Division.
+       NASA OMI science team.
   </p>
   </Prose>
 </Block>
