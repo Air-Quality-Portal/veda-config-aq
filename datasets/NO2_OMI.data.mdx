@@ -158,10 +158,10 @@ layers:
     <Prose
       style={{
         backgroundColor: '#f0f0f0',
-        padding: '24px',
+        padding: '18px',
         borderRadius: '8px',
         flex: 1,
-        maxWidth: '600px',
+        maxWidth: '800px',
         boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
         textAlign: 'justify'
       }}
@@ -181,12 +181,19 @@ layers:
 </Block>
 
 
-<Block style={{justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
-   <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
-      <p>  
-    ## Introduction
-      Nitrogen dioxide (NO₂) is a major air pollutant that affects human health, air quality, and climate, with exposure linked to respiratory issues and increased risk of infection, especially in children and individuals with asthma. Monitoring NO₂ is crucial for understanding urban pollution, tracking industrial emissions, and assessing environmental changes. <br />
-      The Ozone Monitoring Instrument (OMI) aboard NASA’s Aura satellite provides daily, global measurements of NO₂ concentrations, offering a consistent and reliable data record that supports research and policymaking. OMI measures not only NO₂ but also other criteria pollutants such as ozone (O₃), sulfur dioxide (SO₂), and aerosols, enabling detailed analysis of pollution sources and trends. Building on the legacy of NASA’s Total Ozone Mapping Spectrometer (TOMS) and the European Space Agency’s Global Ozone Monitoring Experiment (GOME), OMI offers improved ground resolution and the ability to detect a wider range of atmospheric constituents, including lower atmospheric dust, smoke, and other aerosols, making it a vital tool for air quality and climate research.
+<Block style={{ justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
+  <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
+    <p>
+      <strong>Introduction</strong><br />
+      Nitrogen dioxide (NO₂) is a major air pollutant that affects human health, air quality, and climate, with exposure linked to respiratory issues and increased risk of infection, especially in children and individuals with asthma. Monitoring NO₂ is crucial for understanding urban pollution, tracking industrial emissions, and assessing environmental changes.
+      <br />
+      <span style={{ display: 'inline-block', marginTop: '0.1em' }}>
+        The Ozone Monitoring Instrument (OMI) aboard NASA’s Aura satellite provides daily, global measurements of NO₂ concentrations, offering a consistent and reliable data record that supports research and policymaking. OMI measures not only NO₂ but also other criteria pollutants such as ozone (O₃), sulfur dioxide (SO₂), and aerosols, enabling detailed analysis of pollution sources and trends. Building on the legacy of NASA’s Total Ozone Mapping Spectrometer (TOMS) and the European Space Agency’s Global Ozone Monitoring Experiment (GOME), OMI offers improved ground resolution and the ability to detect a wider range of atmospheric constituents, including lower atmospheric dust, smoke, and other aerosols, making it a vital tool for air quality and climate research.
+      </span>
+      <br />
+      <span style={{ display: 'inline-block', marginTop: '0.1em' }}>
+        Monthly NO₂ data were analyzed to visualize changes during the COVID-19 pandemic. Scientists observed substantial decreases in nitrogen dioxide levels worldwide, primarily linked to shifts in human activity in response to the pandemic. As communities implemented lockdown restrictions to limit the spread of COVID-19, reductions in transportation and industrial activities led to marked declines in NO₂ emissions. In many regions, these decreases were dramatic: for example, global population-weighted NO₂ concentrations in April 2020 were approximately 29% lower in countries with strict lockdowns compared to those without, and in some cases, the reductions were equivalent to 15 years of typical emission declines.
+      </span>
     </p>
   </Prose>
 </Block>
@@ -204,6 +211,7 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
    <p> 
     ## Applications and Use Cases
+      - Monthly NO₂ data was used to visualize global reductions in nitrogen dioxide emissions during COVID-19 lockdowns, highlighting the impact of decreased human activity
       - Assessing health impacts of NO₂ exposure in collaboration with public health organizations
       - Tracking urban air pollution trends using HAQAST tools like the Urban Air Quality Explorer
       - Supporting regulatory frameworks like EPA’s AirNow system with satellite-derived insights
@@ -214,19 +222,19 @@ layers:
 <Block style={{ justifyContent: 'center', alignItems: 'center', margin: '0 auto', width: '100%' }}>
   <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
     <h2>Frequently Asked Questions (FAQs)</h2>
-    <p style={{ marginBottom: '1.5em' }}>
+    <p style={{ marginBottom: '0.5em' }}>
       <strong>What is NO₂?</strong><br />
       NO₂ is a harmful air pollutant primarily emitted from vehicles, power plants, and industrial activities. It contributes to respiratory issues and environmental degradation
     </p>
-    <p style={{ marginBottom: '1.5em' }}>
+    <p style={{ marginBottom: '0.5em' }}>
       <strong>How does nitrogen dioxide interact with other air pollutants?</strong><br />
       Nitrogen dioxide (NO₂) reacts with volatile organic compounds and sunlight to form harmful secondary pollutants like ground-level ozone and fine particulate matter, which contribute to smog and respiratory problems. It also combines with water vapor to create acid rain and nitrate particles, worsening air quality and environmental damage
     </p>
-    <p style={{ marginBottom: '1.5em' }}>
+    <p style={{ marginBottom: '0.5em' }}>
       <strong>How can I use this dataset?</strong><br />
       Applications include air quality monitoring, urban planning, climate modeling, and public health assessments
     </p>
-    <p style={{ marginBottom: '1.5em' }}>
+    <p style={{ marginBottom: '0.5em' }}>
       <strong>What tools are available for data analysis?</strong><br />
       Tools such as Jupyter Notebooks (TBD), the <a href="#">VEDA visualization platform</a>, and <a href="https://search.earthdata.nasa.gov/">Earthdata Search</a> can be used to analyze this dataset
     </p>
@@ -250,7 +258,7 @@ layers:
    <Prose style={{ textAlign: 'justify', display: 'flex', alignItems: 'center' }}>
       <p>  
     ## Disclaimer 
-      The users are encouraged to verify its suitability for their intended purposes. This dataset has been transformed from the original format (NetCDF) into Cloud Optimized GeoTIFF (COG) for display in the Air Quality (AQ) Dashboard. Careful quality checks are used to ensure data transformation has been performed correctly.
+      The users are encouraged to verify its suitability and accuracy for their intended purposes. This dataset has been transformed from the original format (NetCDF) into Cloud Optimized GeoTIFF (COG) for display in the Air Quality (AQ) Dashboard. Careful quality checks are used to ensure data transformation has been performed correctly.
     </p>
   </Prose>
 </Block>
