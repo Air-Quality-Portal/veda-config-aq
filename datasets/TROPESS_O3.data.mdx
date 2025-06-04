@@ -1,6 +1,6 @@
 ---
 id: TROPESS_reanalysis_mon_O3
-name: 'TROPESS_reanalysis_mon_O3'
+name: 'TROPESS Reanalysis Monthly Ozone'
 description: "TROPESS Chemical Reanalysis Ozone Monthly 3-dimensional Product V1"
 media:
   src: ::file ./media/TROPESS_O3.jpg
@@ -55,6 +55,7 @@ layers:
           if (dateFns && datetime && compareDatetime) return `${dateFns.format(datetime, 'LLL yyyy')} VS ${dateFns.format(compareDatetime, 'LLL yyyy')}`;
         }
     analysis:
+      exclude: true
       metrics:
         - mean
       sourceParams:
@@ -76,6 +77,24 @@ layers:
       spatialExtent: Global
       temporalResolution: Monthly
       unit: ppb (parts per billion)
+    dimensions:
+      - id: lat
+        type: spatial
+        extent: [-90, 90]
+        steps: 4326
+      - id: lon
+        type: spatial
+        extent: [-180, 180]
+        steps: 4326
+      - id: lev
+        type: vertical
+        extent: [60, 1000]
+        units: hPa
+        steps: <number_of_levels>
+      - id: time
+        type: temporal
+        extent: ['2005-01-01T00:00:00Z', '2021-12-01T00:00:00Z']
+        step: P1M
 ---
 
 <Block>
