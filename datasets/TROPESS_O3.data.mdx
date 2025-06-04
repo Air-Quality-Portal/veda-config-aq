@@ -55,7 +55,6 @@ layers:
           if (dateFns && datetime && compareDatetime) return `${dateFns.format(datetime, 'LLL yyyy')} VS ${dateFns.format(compareDatetime, 'LLL yyyy')}`;
         }
     analysis:
-      exclude: true
       metrics:
         - mean
       sourceParams:
