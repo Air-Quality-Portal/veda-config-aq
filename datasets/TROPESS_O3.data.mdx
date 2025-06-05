@@ -1,5 +1,5 @@
 ---
-id: TROPESS_reanalysis_mon_O3
+id: TROPESS_reanalysis_mon_O3_pressure
 name: 'TROPESS Reanalysis Monthly Ozone'
 description: "TROPESS Chemical Reanalysis Ozone Monthly 3-dimensional Product V1"
 media:
@@ -25,15 +25,22 @@ taxonomy:
       - Model Output
 infoDescription: |
   ::markdown
-    The TROPESS Chemical Reanalysis Ozone Monthly 3-dimensional Product contains global ozone concentrations from 2005–2021, with data provided at multiple pressure levels between 1000 and 60 hPa. The data are part of the Tropospheric Ozone and Precursors from Earth System Sounding (TROPESS) Project and are available at 1.125° x 1.125° resolution.
+    - Temporal Extent: January 2005 - December 2021
+    - Temporal Resolution: Monthly
+    - Spatial Extent: Global
+    - Spatial Resolution: 1.125° x 1.125°
+    - Data Units: ppb (parts per billion)
+    - Data Type: Research
+    - Data Latency: Updated annually
 layers:
-  - id: TROPESS_reanalysis_mon_O3
-    stacCol: TROPESS_reanalysis_mon_O3
+  - id: TROPESS_reanalysis_mon_O3_pressure
+    stacCol: TROPESS_reanalysis_mon_O3_pressure
     type: cmr
     stacApiEndpoint: "https://staging.openveda.cloud/api/stac/"
     tileApiEndpoint: "https://staging.openveda.cloud/api/titiler-cmr/WebMercatorQuad/tilejson.json"
     name: 'Ozone Concentration (O3)'
     description: 'Monthly Global Ozone Concentrations'
+    initialDatetime: newest
     time_density: month
     zoomExtent:
       - 0
@@ -49,7 +56,7 @@ layers:
       maxzoom: 12
       tile_scale: 3
     compare:
-      datasetId: TROPESS_reanalysis_mon_O3
+      datasetId: TROPESS_reanalysis_mon_O3_pressure
       mapLabel: |
         ::js ({ dateFns, datetime, compareDatetime }) => {
           if (dateFns && datetime && compareDatetime) return `${dateFns.format(datetime, 'LLL yyyy')} VS ${dateFns.format(compareDatetime, 'LLL yyyy')}`;
@@ -62,7 +69,7 @@ layers:
         dst_crs: "+proj=cea"
     legend:
       type: gradient
-      label: O3 Concentration
+      label: ppb (parts per billion)
       min: "0"
       max: "5000"
       stops:
@@ -88,9 +95,9 @@ layers:
         steps: 4326
       - id: lev
         type: vertical
-        extent: [60, 1000]
+        extent: [1000, 850, 700, 500, 300, 150, 100, 60]
         units: hPa
-        steps: <number_of_levels>
+        steps: 8
       - id: time
         type: temporal
         extent: ['2005-01-01T00:00:00Z', '2021-12-01T00:00:00Z']
