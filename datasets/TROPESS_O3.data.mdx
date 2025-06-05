@@ -23,8 +23,8 @@ taxonomy:
   - name: Product Type
     values:
       - Model Output
-infoDescription: |
-  ::markdown
+info:
+  details: |
     - Temporal Extent: January 2005 - December 2021
     - Temporal Resolution: Monthly
     - Spatial Extent: Global
@@ -62,7 +62,6 @@ layers:
           if (dateFns && datetime && compareDatetime) return `${dateFns.format(datetime, 'LLL yyyy')} VS ${dateFns.format(compareDatetime, 'LLL yyyy')}`;
         }
     analysis:
-      exclude: false
       metrics:
         - mean
       sourceParams:
