@@ -15,7 +15,7 @@ infoDescription: |
 layers:
   - id: MODIS_Aqua_Aerosol_Optical_Depth_3km
     stacApiEndpoint: https://dev.ghg.center/api/stac
-    stacCol: MODIS_Aqua_Aerosol_Optical_Depth_3km-GIBS
+    stacCol: MODIS_Aqua_Aerosol_Optical_Depth_3km
     name: MODIS_Aqua_Aerosol_Optical_Depth_3km (from Worldview/GIBS)
     type: wmts 
     description: MODIS_Aqua_Aerosol_Optical_Depth_3km
@@ -33,34 +33,32 @@ layers:
       type: gradient
       min: -0.5
       max: 5
-    stops:
-      - rgb(215, 210, 210)
-      - rgb(187, 175, 159)
-      - rgb(151, 129, 108)
-      - rgb(144, 168, 63)
-      - rgb(87, 133, 41)
-      - rgb(46, 96, 28)
-      - rgb(10, 26, 8)  
-      
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
+
+
 ---
 
 <Block>
   <Prose>
-  ## Denver Cyclones
+  ## MODIS_Aqua_Aerosol_Optical_Depth_3km
+  Aerosol Optical Depth (3km, MODIS, Aqua) provides measurements of aerosol optical thickness at 3km spatial resolution from the Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) instrument. Aerosol optical depth is a measure of the extinction of solar radiation by atmospheric aerosols, indicating the amount of aerosols distributed within a column of air from the Earth's surface to the top of the atmosphere.    
   </Prose>
+
 <Figure>
   <Map
-    center={[-98,50]}
-    zoom={2.5}
+    center={[0,0]}
+    zoom={1}
     datasetId='gibs-layers'
     layerId='MODIS_Aqua_Aerosol_Optical_Depth_3km'
     dateTime='2024-01-01'
   />
-    <Caption
-      attrAuthor='NASA'
-      attrUrl='https://nasa.gov/'
-    >
-      Climatologically favored region of the USA that experiences snowfall from Colorado Low cyclones.
-    </Caption>
   </Figure>
 </Block>
+
