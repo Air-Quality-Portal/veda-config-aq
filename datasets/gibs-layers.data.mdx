@@ -78,7 +78,7 @@ layers:
     type: wmts 
     description: MODIS_Combined_Value_Added_AOD
     sourceParams:
-      layers: 1
+      layers: MODIS_Combined_Value_Added_AOD
       version: 1.3.0
       crs: EPSG:3857
       styles:
@@ -100,6 +100,34 @@ layers:
         - rgb(231, 20, 11)
         - rgb(158, 0, 14)  
 
+  - id: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    name: SWDB_Aerosol_Optical_Thickness_550nm_Daily (from Worldview/GIBS)
+    type: wmts 
+    description: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    sourceParams:
+      layers: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: -0.05
+      max: 1.5
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
 ---
 
 <Block>
@@ -155,3 +183,22 @@ layers:
   />
   </Figure>
 </Block>
+
+<Block>
+  <Prose>
+  #### SWDB_Aerosol_Optical_Thickness_550nm_Daily
+  Aerosol Optical Thickness at 550nm wavelength from the SeaWiFS Data Bank (SWDB). This daily product provides measurements of aerosol optical thickness derived from the Sea-viewing Wide Field-of-view Sensor (SeaWiFS) instrument. The data represents the column-integrated extinction of solar radiation at 550nm wavelength by atmospheric aerosols."  
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='SWDB_Aerosol_Optical_Thickness_550nm_Daily'
+    dateTime='2010-01-10'
+  />
+  </Figure>
+</Block>
+
+
