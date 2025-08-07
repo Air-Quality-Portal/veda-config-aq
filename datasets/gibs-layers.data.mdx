@@ -128,6 +128,35 @@ layers:
         - rgb(255, 66, 20)
         - rgb(231, 20, 11)
         - rgb(158, 0, 14)  
+
+  - id: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    name: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily (from Worldview/GIBS)
+    type: wmts 
+    description: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    sourceParams:
+      layers: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 2.0
+      max: 32
+      stops:
+        - rgb(16, 91, 164)
+        - rgb(51, 131, 190)
+        - rgb(88, 161, 207)
+        - rgb(146, 195, 222)
+        - rgb(189, 215, 235)
+        - rgb(222, 235, 247)
+        - rgb(247, 251, 255)  
 ---
 
 <Block>
@@ -201,4 +230,19 @@ layers:
   </Figure>
 </Block>
 
+<Block>
+  <Prose>
+  #### SWDB_Aerosol_Optical_Thickness_550nm_Daily
+  Aerosol Optical Thickness at 550nm wavelength from the SeaWiFS Data Bank (SWDB). This daily product provides measurements of aerosol optical thickness derived from the Sea-viewing Wide Field-of-view Sensor (SeaWiFS) instrument. The data represents the column-integrated extinction of solar radiation at 550nm wavelength by atmospheric aerosols."  
+  </Prose>
 
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily'
+    dateTime='2025-07-19'
+  />
+  </Figure>
+</Block>
