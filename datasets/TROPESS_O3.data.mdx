@@ -33,11 +33,11 @@ infoDescription: |
   - Data Type: Research
   - Data Latency: Updated annually
 layers:
-  - id: TROPESS_reanalysis_mon_O3_pressure
-    stacCol: TROPESS_reanalysis_mon_O3_pressure
+  - id: TROPESS_reanalysis_mon_O3_pressure_levels
+    stacCol: TROPESS_reanalysis_mon_O3_pressure_levels
     type: cmr
     stacApiEndpoint: "https://staging.openveda.cloud/api/stac/"
-    tileApiEndpoint: "https://staging.openveda.cloud/api/titiler-cmr/collections/TROPESS_reanalysis_mon_O3_pressure/WebMercatorQuad/tilejson.json?variable=o3&lev=500"
+    tileApiEndpoint: "https://staging.openveda.cloud/api/titiler-cmr/WebMercatorQuad/tilejson.json"
     name: 'Ozone Concentration (O3)'
     description: 'Monthly Global Ozone Concentrations'
     initialDatetime: newest
@@ -51,10 +51,14 @@ layers:
       backend: xarray
       colormap_name: reds
       rescale:
-        - 0
-        - 5000
+        - 20
+        - 70
       maxzoom: 12
       tile_scale: 3
+      sel:
+        - lev=500
+        - time={start_datetime}
+      sel_method: nearest
     compare:
       datasetId: TROPESS_reanalysis_mon_O3_pressure
       mapLabel: |
