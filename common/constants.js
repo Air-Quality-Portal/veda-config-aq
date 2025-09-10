@@ -122,19 +122,19 @@ export const dataEngagements = [
     },
     "footer": null
   },
-  // {
-  //   "title": "Documentation",
-  //   "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
-  //   "img": {
-  //     "src": new URL('./media/documentation.png', import.meta.url).href,
-  //     "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
-  //   },
-  //   "link": {
-  //     "url": "https://us-ghg-center.github.io/ghgc-docs/",
-  //     "text": "View more"
-  //   },
-  //   "footer": null
-  // }
+  {
+    "title": "Documentation",
+    "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
+    "img": {
+      "src": new URL('./media/documentation.png', import.meta.url).href,
+      "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
+    },
+    "link": {
+      "url": "",
+      "text": "View more"
+    },
+    "footer": null
+  }
 ];
 
 export const customInterfaces = [
