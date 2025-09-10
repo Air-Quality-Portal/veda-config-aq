@@ -23,7 +23,7 @@ export default function Component() {
                 <section>
                     <Title> Engage with the Data </Title>
                     <p className="margin-bottom-2 font-size-md-deprecated">
-                        Access the catalog of datasets, visualize the data on a map, and conduct analysis with JupyterHub.
+                        Access the catalog of datasets, visualize the data on a map, and conduct analysis with avdanced visualization tools.
                     </p>
                     <Keypoints data={dataEngagements} />
                 </section>

@@ -110,31 +110,31 @@ export const dataEngagements = [
     "footer": null
   },
   {
-    "title": "JupyterHub",
-    "desc": "With JupyterHub, users can analyze cloud archives of Earth science data using an interactive environment. Log in or request access here.",
+    "title": "RSIG",
+    "desc": "RSIG enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud.",
     "img": {
       "src": new URL('./media/jupyter_hub.png', import.meta.url).href,
       "alt": "icon drawing code, plots and figures made with data in the cloud."
     },
     "link": {
-      "url": "https://hub.ghg.center",
+      "url": "",
       "text": "View more"
     },
     "footer": null
   },
-  {
-    "title": "Documentation",
-    "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
-    "img": {
-      "src": new URL('./media/documentation.png', import.meta.url).href,
-      "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
-    },
-    "link": {
-      "url": "https://us-ghg-center.github.io/ghgc-docs/",
-      "text": "View more"
-    },
-    "footer": null
-  }
+  // {
+  //   "title": "Documentation",
+  //   "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
+  //   "img": {
+  //     "src": new URL('./media/documentation.png', import.meta.url).href,
+  //     "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
+  //   },
+  //   "link": {
+  //     "url": "https://us-ghg-center.github.io/ghgc-docs/",
+  //     "text": "View more"
+  //   },
+  //   "footer": null
+  // }
 ];
 
 export const customInterfaces = [
