@@ -4,7 +4,7 @@ import SmartLink from '$veda-ui-scripts/components/common/smart-link';
 import { ExternalLinkFlag } from '$veda-ui-scripts/components/common/card/';
 
 import {
-  Card, 
+  Card,
   CardHeader,
   CardBody,
   CardFooter,
@@ -51,7 +51,7 @@ export default function Keypoints({
   overlay = false,
 }: KeypointsProps) {
   return (
-    
+
     <CardGroup className="margin-bottom-4">
       {data.map(datum => (
         <Card
