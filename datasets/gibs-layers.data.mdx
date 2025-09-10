@@ -1,0 +1,447 @@
+---
+id: gibs-layers
+name: A-GIBS layers test
+featured: true
+description: MODIS_Aqua_Aerosol_Optical_Depth_3km
+media:
+  src: ::file ./media/epa-annual--cover.jpg
+  alt: MODIS NDVI over the Eastern Corn Belt of the Midwestern USA.
+  author:
+    name: Andrew Blackford
+infoDescription: |
+  ::markdown    
+    - Temporal Extent: 2000 Mar 5 - Present
+    - Temporal Resolution: Daily
+layers:
+  - id: MODIS_Aqua_Aerosol_Optical_Depth_3km
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: MODIS_Aqua_Aerosol_Optical_Depth_3km
+    name: MODIS_Aqua_Aerosol_Optical_Depth_3km (from Worldview/GIBS)
+    type: wmts 
+    description: MODIS_Aqua_Aerosol_Optical_Depth_3km
+    sourceParams:
+      layers: MODIS_Aqua_Aerosol_Optical_Depth_3km
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 5
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
+
+  - id: MODIS_Terra_Aerosol_Optical_Depth_3km
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: MODIS_Terra_Aerosol_Optical_Depth_3km
+    name: MODIS_Terra_Aerosol_Optical_Depth_3km (from Worldview/GIBS)
+    type: wmts 
+    description: MODIS_Terra_Aerosol_Optical_Depth_3km
+    sourceParams:
+      layers: MODIS_Terra_Aerosol_Optical_Depth_3km
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 5
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
+
+  - id: MODIS_Combined_Value_Added_AOD
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: MODIS_Combined_Value_Added_AOD
+    name: MODIS_Combined_Value_Added_AOD (from Worldview/GIBS)
+    type: wmts 
+    description: MODIS_Combined_Value_Added_AOD
+    sourceParams:
+      layers: MODIS_Combined_Value_Added_AOD
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 5
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
+
+  - id: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    name: SWDB_Aerosol_Optical_Thickness_550nm_Daily (from Worldview/GIBS)
+    type: wmts 
+    description: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+    sourceParams:
+      layers: SWDB_Aerosol_Optical_Thickness_550nm_Daily
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 1.5
+      stops:
+        - rgb(255, 253, 205)
+        - rgb(255, 240, 144)
+        - rgb(255, 198, 72)
+        - rgb(255, 138, 36)
+        - rgb(255, 66, 20)
+        - rgb(231, 20, 11)
+        - rgb(158, 0, 14)  
+
+  - id: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    name: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily (from Worldview/GIBS)
+    type: wmts 
+    description: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+    sourceParams:
+      layers: TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 2.0
+      max: 32
+      stops:
+        - rgb(0, 0, 139)
+        - rgb(0, 0, 206)
+        - rgb(0, 100, 255)
+        - rgb(0, 150, 255)
+        - rgb(0, 200, 255)
+        - rgb(100, 220, 255)
+        - rgb(200, 240, 255)  
+
+
+  - id: OMI_SO2_Upper_Troposphere_and_Stratosphere
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: OMI_SO2_Upper_Troposphere_and_Stratosphere
+    name: OMI_SO2_Upper_Troposphere_and_Stratosphere (from Worldview/GIBS)
+    type: wmts 
+    description: OMI_SO2_Upper_Troposphere_and_Stratosphere
+    sourceParams:
+      layers: OMI_SO2_Upper_Troposphere_and_Stratosphere
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 2.0
+      max: 32
+      stops:
+        - rgb(0, 0, 139)
+        - rgb(0, 0, 206)
+        - rgb(0, 100, 255)
+        - rgb(0, 150, 255)
+        - rgb(0, 200, 255)
+        - rgb(100, 220, 255)
+        - rgb(200, 240, 255)  
+
+  - id: OMI_Aerosol_Optical_Depth
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: OMI_Aerosol_Optical_Depth
+    name: OMI_Aerosol_Optical_Depth (from Worldview/GIBS)
+    type: wmts 
+    description: OMI_Aerosol_Optical_Depth
+    sourceParams:
+      layers: OMI_Aerosol_Optical_Depth
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 3
+      stops:
+        - rgb(255, 200, 200)
+        - rgb(255, 160, 160)
+        - rgb(255, 120, 120)
+        - rgb(255, 80, 80)
+        - rgb(255, 40, 40)
+        - rgb(220, 0, 0)
+        - rgb(139, 0, 0)  
+
+  - id: MERRA2_Aerosol_Optical_Depth_Analysis_Monthly
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: MERRA2_Aerosol_Optical_Depth_Analysis_Monthly
+    name: MERRA2_Aerosol_Optical_Depth_Analysis_Monthly (from Worldview/GIBS)
+    type: wmts 
+    description: MERRA2_Aerosol_Optical_Depth_Analysis_Monthly
+    sourceParams:
+      layers: MERRA2_Aerosol_Optical_Depth_Analysis_Monthly
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 0.9
+      stops:
+        - rgb(50, 136, 189)
+        - rgb(65, 151, 184)
+        - rgb(80, 167, 179)
+        - rgb(122, 202, 164)
+        - rgb(151, 213, 164)
+        - rgb(180, 225, 160)
+        - rgb(208, 236, 156)
+        - rgb(232, 246, 173)
+        - rgb(246, 251, 177)
+        - rgb(250, 236, 161)
+        - rgb(253, 190, 110)
+        - rgb(206, 55, 77)  
+
+  - id: MISR_Aerosol_Optical_Depth_Avg_Green_Monthly
+    stacApiEndpoint: https://dev.ghg.center/api/stac
+    stacCol: MISR_Aerosol_Optical_Depth_Avg_Green_Monthly
+    name: MISR_Aerosol_Optical_Depth_Avg_Green_Monthly (from Worldview/GIBS)
+    type: wmts 
+    description: MISR_Aerosol_Optical_Depth_Avg_Green_Monthly
+    sourceParams:
+      layers: MISR_Aerosol_Optical_Depth_Avg_Green_Monthly
+      version: 1.3.0
+      crs: EPSG:3857
+      styles:
+    zoomExtent:
+      - 0
+      - 5
+    analysis:
+      exclude: true
+    legend:
+      type: gradient
+      min: 0
+      max: 1
+      stops:
+        - rgb(0, 0, 0)
+        - rgb(64, 0, 128)
+        - rgb(128, 0, 255)
+        - rgb(0, 0, 255)
+        - rgb(0, 128, 255)
+        - rgb(0, 255, 128)
+        - rgb(128, 255, 0)
+        - rgb(255, 255, 0)
+        - rgb(255, 191, 0)
+        - rgb(255, 128, 0)
+        - rgb(255, 64, 64)
+        - rgb(220, 20, 60)
+        - rgb(139, 0, 0)  
+
+---
+
+<Block>
+  <Prose>
+  #### MODIS_Aqua_Aerosol_Optical_Depth_3km
+  Aerosol Optical Depth (3km, MODIS, Aqua) provides measurements of aerosol optical thickness at 3km spatial resolution from the Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) instrument. Aerosol optical depth is a measure of the extinction of solar radiation by atmospheric aerosols, indicating the amount of aerosols distributed within a column of air from the Earth's surface to the top of the atmosphere.    
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='MODIS_Aqua_Aerosol_Optical_Depth_3km'
+    dateTime='2024-01-10'
+  />
+  </Figure>
+</Block>
+
+
+<Block>
+  <Prose>
+  #### MODIS_Terra_Aerosol_Optical_Depth_3km
+  Aerosol Optical Depth (3km, MODIS, Aqua) provides measurements of aerosol optical thickness at 3km spatial resolution from the Aqua Moderate Resolution Imaging Spectroradiometer (MODIS) instrument. Aerosol optical depth is a measure of the extinction of solar radiation by atmospheric aerosols, indicating the amount of aerosols distributed within a column of air from the Earth's surface to the top of the atmosphere.    
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='MODIS_Terra_Aerosol_Optical_Depth_3km'
+    dateTime='2024-01-10'
+  />
+  </Figure>
+</Block>
+
+
+<Block>
+  <Prose>
+  #### MODIS_Combined_Value_Added_AOD
+  ##### Data has gaps (non-periodic)
+  Aerosol Optical Depth (Value Added, MODIS, Combined Aqua and Terra) provides combined measurements of aerosol optical thickness from both the Terra and Aqua MODIS instruments. This value-added product merges data from both satellites to provide enhanced temporal coverage and improved data quality. Aerosol optical depth is a measure of the extinction of solar radiation by atmospheric aerosols, indicating the amount of aerosols distributed within a column of air from the Earth's surface to the top of the atmosphere.  
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='MODIS_Combined_Value_Added_AOD'
+    dateTime='2024-01-10'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### SWDB_Aerosol_Optical_Thickness_550nm_Daily
+  Aerosol Optical Thickness at 550nm wavelength from the SeaWiFS Data Bank (SWDB). This daily product provides measurements of aerosol optical thickness derived from the Sea-viewing Wide Field-of-view Sensor (SeaWiFS) instrument. The data represents the column-integrated extinction of solar radiation at 550nm wavelength by atmospheric aerosols."  
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='SWDB_Aerosol_Optical_Thickness_550nm_Daily'
+    dateTime='2010-01-10'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily
+  Sulfur Dioxide Total Vertical Column from the TROPOspheric Monitoring Instrument (TROPOMI) aboard the Sentinel-5 Precursor (Sentinel-5P) satellite. This Level 2 daily product provides measurements of the total atmospheric column of sulfur dioxide (SO2), a key pollutant from volcanic eruptions and anthropogenic sources such as fossil fuel combustion. TROPOMI provides high spatial resolution monitoring of atmospheric composition.
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='TROPOMI_L2_Sulfur_Dioxide_Total_Vertical_Column_Daily'
+    dateTime='2025-07-19'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### OMI_SO2_Upper_Troposphere_and_Stratosphere
+  Sulfur Dioxide in the Upper Troposphere and Stratosphere from the Ozone Monitoring Instrument (OMI) aboard NASA's Aura satellite. This product provides daily measurements of SO2 column amounts at higher altitudes, primarily detecting volcanic emissions and major pollution plumes that reach the upper troposphere and stratosphere. OMI provides global coverage with high sensitivity to SO2 at these altitudes.  
+</Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='OMI_SO2_Upper_Troposphere_and_Stratosphere'
+    dateTime='2025-07-19'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### OMI_Aerosol_Optical_Depth
+  Aerosol Optical Depth from the Ozone Monitoring Instrument (OMI) aboard NASA's Aura satellite. This product provides daily measurements of aerosol optical thickness, which is a measure of the extinction of solar radiation by atmospheric aerosols. OMI offers global coverage with UV/visible spectral measurements that enable aerosol characterization and monitoring of air quality and climate-relevant aerosol properties.
+</Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='OMI_Aerosol_Optical_Depth'
+    dateTime='2024-02-12'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### MERRA2_Aerosol_Optical_Depth_Analysis_Monthly
+Monthly Aerosol Optical Depth Analysis from the Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA-2). MERRA-2 is a NASA atmospheric reanalysis that begins in 1980 and continues to present. It provides a comprehensive record of Earth's weather and climate by combining observations with numerical models to produce a consistent, gridded dataset of atmospheric variables including aerosol properties.
+</Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='MERRA2_Aerosol_Optical_Depth_Analysis_Monthly'
+    dateTime='2025-02-01'
+  />
+  </Figure>
+</Block>
+
+<Block>
+  <Prose>
+  #### MISR_Aerosol_Optical_Depth_Avg_Green_Monthly
+  Monthly averaged Aerosol Optical Depth at green wavelength (558 nm) from the Multi-angle Imaging SpectroRadiometer (MISR) aboard NASA's Terra satellite. MISR's unique multi-angle capability provides improved aerosol retrieval over bright surfaces and better characterization of aerosol properties. The green band AOD represents aerosol extinction in the visible spectrum, crucial for air quality and climate studies.
+  </Prose>
+
+<Figure>
+  <Map
+    center={[0,0]}
+    zoom={1}
+    datasetId='gibs-layers'
+    layerId='MISR_Aerosol_Optical_Depth_Avg_Green_Monthly'
+    dateTime='2020-02-01'
+  />
+  </Figure>
+</Block>
+
+
