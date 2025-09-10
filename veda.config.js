@@ -100,7 +100,7 @@ module.exports = {
     type: {
       base: {
         color: '#34495E',
-        family: '"Inter", sans-serif',
+        family: '"Inter", sans-serif !important',
       },
     },
     button: {

@@ -16,7 +16,7 @@ import {
   CollecticonArrowRight
 } from '$veda-ui/@devseed-ui/collecticons';
 
-import "./styles.scss"
+import "./styles.scss";
 
 
 type Data = {
@@ -57,7 +57,7 @@ export default function Keypoints({
         <Card
           key={datum.title}
           gridLayout={{ tablet: { col: 4 } }}
-          className="padding-bottom-0"
+          className="padding-bottom-0 margin-bottom-4"
           containerProps={{
             className: `border-0 position-relative card-shadow__hover margin-top-1 margin-right-2  ${cardType === 'cover' ? 'card__cover height-card-lg' : ''}`,
           }}
