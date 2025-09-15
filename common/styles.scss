@@ -1,9 +1,15 @@
 .blocklink {
-  &:focus { outline: none; }
-  &:focus-visible { outline: 1px solid var(--veda-color-link);}
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 1px solid var(--veda-color-link);
+  }
+
   @supports not selector(:focus-visible) {
     &:focus {
-      outline: 1px solid  var(--veda-color-link);
+      outline: 1px solid var(--veda-color-link);
     }
   }
 }
@@ -13,8 +19,9 @@
 }
 
 .card-shadow__hover {
-  box-shadow: 0 0 2px 0 rgba(44,62,80,0.08),0 6px 6px 0 rgba(44,62,80,0.08);
+  box-shadow: 0 0 2px 0 rgba(44, 62, 80, 0.08), 0 6px 6px 0 rgba(44, 62, 80, 0.08);
   transition: all 0.24s ease-in-out 0s;
+
   &:hover {
     transform: translate(0, 0.125rem);
   }
@@ -27,6 +34,7 @@
 .veda-color--link {
   color: var(--veda-color-link);
 }
+
 .veda-color--base {
   color: var(--veda-color-base);
 }
@@ -36,4 +44,14 @@
 
 .font-size-md-deprecated {
   font-size: calc(1rem + var(--base-text-increment, 0rem));
+}
+
+.usa-banner__button:after {
+  top: 0;
+}
+
+// hardcoded to override the USWDS styles coming from veda-ui, until
+// https://github.com/NASA-IMPACT/veda-ui/issues/1573 is resolved
+li.usa-card {
+  margin-bottom: 2.5rem !important;
 }
