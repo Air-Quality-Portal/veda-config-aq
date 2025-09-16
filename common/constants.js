@@ -98,7 +98,7 @@ export const dataEngagements = [
   },
   {
     "title": "Interactive Map",
-    "desc": "The exploration and analysis environment can be used to visually examine data on a customizable map and create a time series of basic statistics.",
+    "desc": "Use the exploration and analysis environment to visually examine data on a customizable map and create time series of basic statistics for a given region.",
     "img": {
       "src": new URL('./media/interactive_map.png', import.meta.url).href,
       "alt": "icon drawing showing map with a magnifying glass and indicating a clock for temporal data."
@@ -111,7 +111,7 @@ export const dataEngagements = [
   },
   {
     "title": "RSIG",
-    "desc": "RSIG enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud.",
+    "desc": "RSIG enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud (future access).",
     "img": {
       "src": new URL('./media/jupyter_hub.png', import.meta.url).href,
       "alt": "icon drawing code, plots and figures made with data in the cloud."

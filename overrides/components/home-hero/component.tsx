@@ -85,7 +85,7 @@ export default function HomeHero(props) {
           </HeroHeadline>
         </PageHeroHGroup>
         <HeroSubtitle>
-            <VarHeading size="xsmall">Data and Tools for Assessing Air Quality </VarHeading>
+            <VarHeading size="xsmall">Air Quality Data and Tools that Empower Local Decisions </VarHeading>
           </HeroSubtitle>
           <Partners variation="negative" size="big" />
       </Constrainer>

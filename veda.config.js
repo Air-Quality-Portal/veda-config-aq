@@ -115,7 +115,7 @@ module.exports = {
     'externalLinksInNewTab': true,
   },
   navItems: {
-    headerNavItems: defaultMenuLinks,
+    mainNavItems: defaultMenuLinks,
     subNavItems: subNavItems
   },
 };

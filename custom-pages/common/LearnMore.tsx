@@ -24,7 +24,7 @@ export default function LearnMore() {
                   <CollecticonEnvelope size='xlarge' color='#082a64' className="grid-col-auto" />
               </Grid>
               <Grid col='fill' className="display-flex flex-align-center margin-bottom-2">
-                  <span className="margin-left-4 font-size-md-deprecated"> To receive the latest AIR4US updates, <a href={SUBSCRIPTION_URL}>subscribe to our email updates list.</a></span>
+                  <span className="margin-left-4 font-size-md-deprecated"> To receive the latest AIR4US updates, subscribe to our email updates list.</span>
               </Grid>
           </Grid>
           <Grid row>
