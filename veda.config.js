@@ -34,7 +34,8 @@ if (config.GOOGLE_FORM) {
     {
       title: 'Contact us',
       // src: config.GOOGLE_FORM,
-      type: 'action'
+      type: 'action',
+      disabled: true
     }
   ];
 }
@@ -115,7 +116,7 @@ module.exports = {
     'externalLinksInNewTab': true,
   },
   navItems: {
-    mainNavItems: defaultMenuLinks,
+    headerNavItems: defaultMenuLinks,
     subNavItems: subNavItems
   },
 };
