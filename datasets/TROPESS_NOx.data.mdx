@@ -10,16 +10,13 @@ media:
 taxonomy:
   - name: Topics
     values:
-      - Air Quality
-  - name: Subtopics
-    values:
-      - Anthropogenic Emissions
+      - Air Quality Measurement
   - name: Source
     values:
       - NASA
   - name: Gas
     values:
-      - NOx
+      - NOₓ
   - name: Product Type
     values:
       - Model Output
@@ -49,6 +46,7 @@ layers:
       maxzoom: 12
       tile_scale: 3
       sel:
+        - lev=0
         - time={start_datetime}      
     compare:
       datasetId: TROPESS_reanalysis_mon_emi_nox_anth
