@@ -28,17 +28,16 @@ let subNavItems = [
 ]
 
 
-if (config.GOOGLE_FORM) {
-  subNavItems = [
-    ...subNavItems,
-    {
-      title: 'Contact us',
-      // src: config.GOOGLE_FORM,
-      type: 'action',
-      disabled: true
-    }
-  ];
-}
+// Contact us button visible but non-clickable  
+subNavItems = [
+  ...subNavItems,
+  {
+    id: 'contact-us',
+    title: 'Contact us',
+    href: 'javascript:void(0)',
+    type: 'externalLink'
+  }
+];
 
 module.exports = {
   /**
@@ -116,7 +115,7 @@ module.exports = {
     'externalLinksInNewTab': true,
   },
   navItems: {
-    headerNavItems: defaultMenuLinks,
+    mainNavItems: defaultMenuLinks,
     subNavItems: subNavItems
   },
 };
