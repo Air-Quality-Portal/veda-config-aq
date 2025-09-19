@@ -22,7 +22,7 @@ taxonomy:
       - Model Output
 infoDescription: |
   ::markdown
-    The TROPESS Chemical Reanalysis Surface Anthropogenic NOx emissions Monthly 2-dimensional Product contains nitrogen oxides (NO and NO2) emissions from anthropogenic sources. The data are part of the Tropospheric Chemical Reanalysis v2 (TCR-2) for the period 2005-2021. The dataset represents surface-level emissions at 1000 hPa.
+    The TROPESS Chemical Reanalysis Surface Anthropogenic NOx emissions Monthly 2-dimensional Product contains nitrogen oxides (NO and NO2) emissions from anthropogenic sources. The data are part of the Tropospheric Chemical Reanalysis v2 (TCR-2) for the period 2005-2021.
 layers:
   - id: TROPESS_reanalysis_mon_emi_nox_anth
     stacCol: TROPESS_reanalysis_mon_emi_nox_anth
@@ -45,9 +45,6 @@ layers:
         - 5.0e-10
       maxzoom: 12
       tile_scale: 3
-      sel:
-        - lev=1000
-        - time={start_datetime}      
     compare:
       datasetId: TROPESS_reanalysis_mon_emi_nox_anth
       mapLabel: |
@@ -86,11 +83,6 @@ layers:
         type: spatial
         extent: [-180, 180]
         steps: 4326
-      - id: lev
-        type: vertical
-        extent: [1000, 995, 980, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 175, 150, 125, 100, 90, 80, 70, 60]
-        units: hPa
-        steps: 27
       - id: time
         type: temporal
         extent: ['2005-01-01T00:00:00Z', '2021-12-01T00:00:00Z']
