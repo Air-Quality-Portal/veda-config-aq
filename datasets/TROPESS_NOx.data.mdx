@@ -22,7 +22,7 @@ taxonomy:
       - Model Output
 infoDescription: |
   ::markdown
-    The TROPESS Chemical Reanalysis Surface Anthropogenic NOx emissions Monthly 2-dimensional Product contains nitrogen oxides (NO and NO2) emissions from anthropogenic sources. The data are part of the Tropospheric Chemical Reanalysis v2 (TCR-2) for the period 2005-2021
+    The TROPESS Chemical Reanalysis Surface Anthropogenic NOx emissions Monthly 2-dimensional Product contains nitrogen oxides (NO and NO2) emissions from anthropogenic sources. The data are part of the Tropospheric Chemical Reanalysis v2 (TCR-2) for the period 2005-2021. The dataset represents surface-level emissions at 1000 hPa.
 layers:
   - id: TROPESS_reanalysis_mon_emi_nox_anth
     stacCol: TROPESS_reanalysis_mon_emi_nox_anth
@@ -46,7 +46,7 @@ layers:
       maxzoom: 12
       tile_scale: 3
       sel:
-        - lev=0
+        - lev=1000
         - time={start_datetime}      
     compare:
       datasetId: TROPESS_reanalysis_mon_emi_nox_anth
@@ -86,6 +86,11 @@ layers:
         type: spatial
         extent: [-180, 180]
         steps: 4326
+      - id: lev
+        type: vertical
+        extent: [1000, 995, 980, 950, 900, 850, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 175, 150, 125, 100, 90, 80, 70, 60]
+        units: hPa
+        steps: 27
       - id: time
         type: temporal
         extent: ['2005-01-01T00:00:00Z', '2021-12-01T00:00:00Z']
@@ -137,7 +142,7 @@ layers:
       Nitrogen oxides (NOx, including NO and NO₂) are critical air pollutants linked to respiratory and cardiovascular health risks, as well as environmental impacts like smog and acid rain. NOx is primarily emitted by fossil fuel combustion in transportation, power generation, and industry. Monitoring NOx emissions is essential for air quality management, regulatory compliance, and understanding atmospheric chemistry.
       </p>
       <p style={{ marginBottom: '0.4em' }}>
-      The TROPESS Chemical Reanalysis Surface Total NOx Emissions Monthly 2-dimensional Product provides global, monthly gridded estimates of surface-level nitrogen oxides (NOx) emissions from anthropogenic sources. Developed using JPL’s Multi-mOdel Multi-cOnstituent Chemical (MOMO-Chem) data assimilation system, the dataset integrates satellite observations with chemical transport models to produce accurate, observation-constrained emission fields. This reanalysis uses satellite measurements, such as tropospheric NO2 column retrievals from OMI and TROPOMI, to refine NOx emissions estimates.
+      The TROPESS Chemical Reanalysis Surface Total NOx Emissions Monthly 2-dimensional Product provides global, monthly gridded estimates of surface-level nitrogen oxides (NOx) emissions from anthropogenic sources. Developed using JPL's Multi-mOdel Multi-cOnstituent Chemical (MOMO-Chem) data assimilation system, the dataset integrates satellite observations with chemical transport models to produce accurate, observation-constrained emission fields. This reanalysis uses satellite measurements, such as tropospheric NO2 column retrievals from OMI and TROPOMI, to refine NOx emissions estimates.
       </p>
     </p>
   </Prose>

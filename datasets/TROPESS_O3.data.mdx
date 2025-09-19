@@ -24,6 +24,7 @@ infoDescription: |
   ::markdown
   - Temporal Extent: January 2005 - December 2021
   - Temporal Resolution: Monthly
+  - Pressure level: 1000hPa
   - Spatial Extent: Global
   - Spatial Resolution: 1.125° x 1.125°
   - Data Units: ppb (parts per billion)
@@ -48,12 +49,12 @@ layers:
       backend: xarray
       colormap_name: reds
       rescale:
-        - 20
-        - 70
+        - 0
+        - 5000
       maxzoom: 12
       tile_scale: 3
       sel:
-        - lev=500
+        - lev=1000
         - time={start_datetime}
       sel_method: nearest
     compare:
@@ -70,8 +71,8 @@ layers:
     legend:
       type: gradient
       label: ppb (parts per billion)
-      min: "20"
-      max: "70"
+      min: "0"
+      max: "5000"
       stops:
       - "#313695"
       - "#74add1"
