@@ -97,8 +97,8 @@ export const dataEngagements = [
     "footer": null
   },
   {
-    "title": "Interactive Map",
-    "desc": "Use the exploration and analysis environment to visually examine data on a customizable map and create time series of basic statistics for a given region.",
+    "title": "Time-Series Analysis Tool",
+    "desc": "Use the time-series analysis tool to visually examine data and create time series of basic statistics for a given region.",
     "img": {
       "src": new URL('./media/interactive_map.png', import.meta.url).href,
       "alt": "icon drawing showing map with a magnifying glass and indicating a clock for temporal data."
@@ -110,8 +110,8 @@ export const dataEngagements = [
     "footer": null
   },
   {
-    "title": "RSIG",
-    "desc": "RSIG enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud (future access).",
+    "title": "Data Visualization Tool",
+    "desc": "The data visualization tool enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud (under development).",
     "img": {
       "src": new URL('./media/jupyter_hub.png', import.meta.url).href,
       "alt": "icon drawing code, plots and figures made with data in the cloud."
