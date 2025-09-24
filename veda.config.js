@@ -110,7 +110,7 @@ module.exports = {
       },
     },
   },
-  
+
   booleans: {
     'externalLinksInNewTab': true,
   },
@@ -118,4 +118,12 @@ module.exports = {
     headerNavItems: defaultMenuLinks,
     subNavItems: subNavItems
   },
+
+  siteAlert: {
+  content: `**This is a demonstration prototype. No content, whether that is text, images, logo, capabilities, etc are indicative of the final AIR4US portal.**`,
+  expires: '2026-12-31T23:59:59-05:00',
+  type: 'warning',
+  slim: true,
+  showIcon: false
+},
 };
