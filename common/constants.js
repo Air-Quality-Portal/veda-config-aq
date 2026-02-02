@@ -97,8 +97,8 @@ export const dataEngagements = [
     "footer": null
   },
   {
-    "title": "Interactive Map",
-    "desc": "The exploration and analysis environment can be used to visually examine data on a customizable map and create a time series of basic statistics.",
+    "title": "Time-Series Analysis Tool",
+    "desc": "Use the time-series analysis tool to visually examine data and create time series of basic statistics for a given region.",
     "img": {
       "src": new URL('./media/interactive_map.png', import.meta.url).href,
       "alt": "icon drawing showing map with a magnifying glass and indicating a clock for temporal data."
@@ -110,31 +110,31 @@ export const dataEngagements = [
     "footer": null
   },
   {
-    "title": "JupyterHub",
-    "desc": "With JupyterHub, users can analyze cloud archives of Earth science data using an interactive environment. Log in or request access here.",
+    "title": "Data Visualization Tool",
+    "desc": "The data visualization tool enables users to visualize and analyze multiple datasets with varying temporal resolutions, offering advanced analytics through the cloud (under development).",
     "img": {
       "src": new URL('./media/jupyter_hub.png', import.meta.url).href,
       "alt": "icon drawing code, plots and figures made with data in the cloud."
     },
     "link": {
-      "url": "https://hub.ghg.center",
+      "url": "",
       "text": "View more"
     },
     "footer": null
   },
-  {
-    "title": "Documentation",
-    "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
-    "img": {
-      "src": new URL('./media/documentation.png', import.meta.url).href,
-      "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
-    },
-    "link": {
-      "url": "https://us-ghg-center.github.io/ghgc-docs/",
-      "text": "View more"
-    },
-    "footer": null
-  }
+  // {
+  //   "title": "Documentation",
+  //   "desc": "Access technical documentation for US4AIR data services, including a collection of code notebooks and instructions for accessing data via API.",
+  //   "img": {
+  //     "src": new URL('./media/documentation.png', import.meta.url).href,
+  //     "alt": "icon of an open laptop surrounded by icons of documents, and a chart."
+  //   },
+  //   "link": {
+  //     "url": "https://us-ghg-center.github.io/ghgc-docs/",
+  //     "text": "View more"
+  //   },
+  //   "footer": null
+  // }
 ];
 
 export const customInterfaces = [

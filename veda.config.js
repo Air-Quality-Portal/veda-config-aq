@@ -28,16 +28,16 @@ let subNavItems = [
 ]
 
 
-if (config.GOOGLE_FORM) {
-  subNavItems = [
-    ...subNavItems,
-    {
-      title: 'Contact us',
-      src: config.GOOGLE_FORM,
-      type: 'action'
-    }
-  ];
-}
+// Contact us button visible but non-clickable  
+subNavItems = [
+  ...subNavItems,
+  {
+    id: 'contact-us',
+    title: 'Contact us',
+    href: 'javascript:void(0)',
+    type: 'externalLink'
+  }
+];
 
 module.exports = {
   /**
@@ -100,7 +100,7 @@ module.exports = {
     type: {
       base: {
         color: '#34495E',
-        family: '"Inter", sans-serif',
+        family: '"Inter", sans-serif !important',
       },
     },
     button: {
@@ -110,12 +110,20 @@ module.exports = {
       },
     },
   },
-  
+
   booleans: {
     'externalLinksInNewTab': true,
   },
   navItems: {
-    mainNavItems: defaultMenuLinks,
+    headerNavItems: defaultMenuLinks,
     subNavItems: subNavItems
   },
+
+  siteAlert: {
+  content: `**This is a demonstration prototype. No content, whether that is text, images, logo, capabilities, etc are indicative of the final AIR4US portal.**`,
+  expires: '2027-12-31T23:59:59-05:00',
+  type: 'warning',
+  slim: true,
+  showIcon: false
+},
 };

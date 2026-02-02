@@ -85,7 +85,7 @@ export default function HomeHero(props) {
           </HeroHeadline>
         </PageHeroHGroup>
         <HeroSubtitle>
-            <VarHeading size="xsmall">Data and Tools for Assessing Air Quality </VarHeading>
+            <VarHeading size="xsmall">Air Quality Data and Tools that Empower Local Decisions </VarHeading>
           </HeroSubtitle>
           <Partners variation="negative" size="big" />
       </Constrainer>
@@ -104,13 +104,13 @@ export default function HomeHero(props) {
         ) : (
           <img
             src={coverImgSrc}
-            alt="visualizaion of january 2021 global atmospheric carbon dioxide"
+            alt="NO2 over the United States"
           />
         )}
         <Figcaption>
           <FigureAttribution
-            author="NASA's Scientific Visualization Studio. Visualization of January 2021 Global Atmospheric Carbon Dioxide (CO₂)"
-            url="https://svs.gsfc.nasa.gov/5115"
+            author="NASA's Scientific Visualization Studio. Visualization of NO2 over the United States as measured by OMI, 2005-2022"
+            url="https://svs.gsfc.nasa.gov/5070/"
             position="bottom-right"
           />
         </Figcaption>

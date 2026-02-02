@@ -245,7 +245,7 @@ export default function PageFooter(props) {
                 <FooterMenuLink to='/news-and-events'>News & Events</FooterMenuLink>
               </li>
               <li>
-                <FooterMenuLink as="a" href={SUBSCRIPTION_URL}>
+                <FooterMenuLink as="a" href={SUBSCRIPTION_URL} onClick={(e) => e.preventDefault()}>
                   Subscribe
                 </FooterMenuLink>
               </li>
@@ -305,7 +305,7 @@ export default function PageFooter(props) {
               <Partners variation="positive" size="small" />
             </TintBox>
             <p>
-              U.S. Air Quality Information Center Responsible Official:{" "}
+              Air Quality Information Resource for the US Responsible Official:{" "}
                 <strong>Emma Knowland</strong>
             </p>
           </CreditsInfo>
